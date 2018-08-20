@@ -18,11 +18,6 @@ $(document).ready(function() {
     .height("20px")
     .css("font-style","italic");
 
-  $("ol:not(:has(*))")
-    .parent()
-    .filter(".table")
-    .hide();
-
   $("a[href='']")
     .parent().hide();
 
