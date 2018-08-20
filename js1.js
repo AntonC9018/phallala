@@ -18,8 +18,8 @@ $(document).ready(function() {
     .height("20px")
     .css("font-style","italic");
 
-  $("a[href='']")
-    .parent().hide();
+  // $("a[href='']")
+  //   .parent().hide();
 
   // $(".table").mouseenter(function() {
   //   $(this).css("backgroundColor", "");
