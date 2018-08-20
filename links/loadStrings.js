@@ -19,8 +19,8 @@ function processData(allText) {
       $('<li><a target="_blank" href="' + data[2] + '">'
       + data[1] + '</a></li>'));
     }
-  // $("ol:not(:has(*))")
-  // .parent()
-  // .filter(".table")
-  // .hide();
+  $("ol:not(:has(*))")
+  .parent()
+  .filter(".table")
+  .hide();
 }
