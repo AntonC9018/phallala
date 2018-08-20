@@ -14,7 +14,7 @@ function processData(allText) {
 
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
-        $(data[0]).append(
+        $("#info ol").append(
           $('<li><a target="_blank" href="' + data[2] + '">'
           + data[1] + '</a></li>'));
         }
