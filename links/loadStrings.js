@@ -1,3 +1,6 @@
+var allTextLines;
+var data;
+var lines;
 $(document).ready(function() {
     $.ajax({
         type: "GET",
@@ -8,12 +11,12 @@ $(document).ready(function() {
 });
 
 function processData(allText) {
-    var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
-    var lines = [];
+    allTextLines = allText.split(/\r\n|\n/);
+    headers = allTextLines[0].split(',');
+    lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
+        data = allTextLines[i].split(',');
         $("ol").append(
           $('<li><a target="_blank" href="' + data[2] + '">'
           + data[1] + '</a></li>'));
