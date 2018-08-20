@@ -1,2 +1,0 @@
-"append-to","text","href"
-"#info","SQL","https://www.youtube.com/watch?v=oReH2vO8Izc"

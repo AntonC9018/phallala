@@ -18,7 +18,9 @@ $(document).ready(function() {
     .height("20px")
     .css("font-style","italic");
 
-  $("#with-newbie")
+  $("ol:not(:has(*))")
+    .parent()
+    .filter(".table")
     .hide();
 
   $("a[href='']")
