@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $.ajax({
     type: "GET",
-    url: "text.csv",
+    url: "https://drive.google.com/open?id=1QU_bBO4QbIFj18wpQenB1837UL8jpBzw",
     dataType: "text",
     success: function(data) {processData(data);}
   });
