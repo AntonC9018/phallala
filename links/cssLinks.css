@@ -1,0 +1,49 @@
+
+
+#topbar-wrapper + div {
+  margin-top: 50px;
+}
+
+#table-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table {
+  background-color: rgb(210, 220, 255);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: background-color .2s, box-shadow .2s;
+  padding: 0%;
+
+  flex: 1 0 18em;
+  margin: 7.5px;
+  height: auto;
+  max-width: 23em;
+  border-radius: 20px;
+}
+
+.table:hover {
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(225, 210, 230);
+}
+
+input.password {
+  background-color: rgb(230, 240, 255);
+}
+
+.table h4 {
+  border-bottom: 1px solid black;
+  padding-left: 3em;
+}
+
+button.password {
+  height: 24%;
+}
+
+ol {
+  line-height: 1.3;
+  margin-left: 0.5em;
+  margin-right: 0.5em
+}

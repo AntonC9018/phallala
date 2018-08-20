@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+#topbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(145, 40, 162);
+}
+
+#inside-topbar {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+#inside-topbar span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.topbar-cur {
+  color: white;
+}
+
+#home-span {
+  width: 50px;
+}
+
+#inside-topbar a {
+   color: white;
+   text-decoration: none;
+}
