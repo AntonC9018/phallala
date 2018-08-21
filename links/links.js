@@ -18,24 +18,6 @@ $(document).ready(function() {
     .height("20px")
     .css("font-style","italic");
 
-  // $("a[href='']")
-  //   .parent().hide();
-
-  // $(".table").mouseenter(function() {
-  //   $(this).css("backgroundColor", "");
-  // }).mouseleave(function() {
-  //   $(this).css("backgroundColor", "rgb(210, 220, 255)");
-  // });
-
-  $("#inside-topbar span").not(".topbar-cur")
-    .mouseenter(function() {
-      $(this).css("backgroundColor", "rgb(35, 7, 75)");
-    })
-    .mouseleave(function() {
-      $(this).css("backgroundColor", "unset")
-    });
-
-  $(".topbar-cur").css("backgroundColor", "rgb(58, 183, 66)");
 
   $(".table-header").css({"text-align": "center",
   "background-color": "rgb(255, 190, 30)",
