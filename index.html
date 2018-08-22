@@ -6,6 +6,22 @@
 	<script src="header.js"></script>
 	<link rel="stylesheet" href="header.css"></link>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="header.css"></link>
+  <script src="./index.js"></script>
+  <style>
+  .carousel-inner img {
+      width: 100%;
+      height: auto;
+  }
+</style>
 </head>
 <body>
   <div id="topbar-wrapper">
@@ -31,7 +47,55 @@
 
     </div>
   </div>
+  <div class="container">
+    <div class="jumbotron">
+
+      <h3>Привет!</h3>
+      <p>Добро пожаловать на домашнюю страницу твоего личного сайта!<br>
+        Пользуйся с умом.</p>
+      </div>
+<p>Нажми на кнопку, чтобы увидеть фотографии</p>
+      <button type="button" class="btn-lg btn-primary" id="car-button" style="margin-bottom: 40px">Нажми на меня!</button>
+      <div id="photos" class="carousel slide" data-ride="carousel">
+        <script>$("#photos").hide()</script>
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#photos" data-slide-to="0" class="active"></li>
+          <li data-target="#photos" data-slide-to="1"></li>
+          <li data-target="#photos" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://worldanimalday.ru/play/images/pets/markiz.jpg" alt="Маркиз" width="1209" height="680">
+          </div>
+          <div class="carousel-item">
+            <img src="https://worldanimalday.ru/play/images/pets/multik.jpg" alt="Кошка хмурая" width="1209" height="680" >
+          </div>
+          <div class="carousel-item">
+            <img src="https://worldanimalday.ru/play/images/pets/druzhok.jpg" alt="Ретривер" width="1209" height="680">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#photos" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#photos" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <p>Картинки, лишь малая часть того, на что я способен</p>
+      <audio controls>
+        <source src="./music.mp3" type="audio/mp3" />
+        <a href="./music.mp3">horse</a>
+      </audio>
+    </div>
+
 
 
 
 </body>
+</html>
