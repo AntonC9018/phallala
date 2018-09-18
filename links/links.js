@@ -38,13 +38,12 @@ function setup() {
 
   $("#g-drive ol")
     .append($("<li>")
-      .click((e) => eventClick('https://docs.google.com/document/d/e/2PACX-1vTzWn28zMvO4FYFjqxmfZ7h5cJbq9sbyIRdviGhqPjTWgJt8bsvMnfSOGobfUSyTJIa7FkuJDmQkP7m/pub?embedded=true', e))
       .append($("<a>")
+        .click((e) => eventClick('https://docs.google.com/document/d/e/2PACX-1vTzWn28zMvO4FYFjqxmfZ7h5cJbq9sbyIRdviGhqPjTWgJt8bsvMnfSOGobfUSyTJIa7FkuJDmQkP7m/pub?embedded=true', e))
         .html("Доставка ПМР")
         .attr("href", "#.iframe")))
     .append($("<li>")
-      .click((e) => eventClick('https://docs.google.com/spreadsheets/d/e/2PACX-1vRlZcefwZpSp0ZovIGfH_fUplQlKUz2w5ETVrA6pAI8TGVCu8DqbWsUjWACDyYVJdVNUYzgSvmHpSg_/pubhtml?widget=true&amp;headers=false', e))
-      .append($("<a>")
+      .append($("<a>").click((e) => eventClick('https://docs.google.com/spreadsheets/d/e/2PACX-1vRlZcefwZpSp0ZovIGfH_fUplQlKUz2w5ETVrA6pAI8TGVCu8DqbWsUjWACDyYVJdVNUYzgSvmHpSg_/pubhtml?widget=true&amp;headers=false', e))
         .html("INFO SPO MD")
         .attr("href", "#.iframe")));
 }
