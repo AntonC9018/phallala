@@ -33,4 +33,32 @@ function setup() {
     "border-radius": "17px 17px 0 0",
     "border-bottom": "1px solid black"
   });
+  console.log("here")
+  $("body").click(() => $(".iframe").remove())
+
+  $("#g-drive ol")
+    .append($("<li>")
+      .click((e) => eventClick('https://docs.google.com/document/d/e/2PACX-1vTzWn28zMvO4FYFjqxmfZ7h5cJbq9sbyIRdviGhqPjTWgJt8bsvMnfSOGobfUSyTJIa7FkuJDmQkP7m/pub?embedded=true', e))
+      .append($("<a>")
+        .html("Доставка ПМР")
+        .attr("href", "#.iframe")))
+    .append($("<li>")
+      .click((e) => eventClick('https://docs.google.com/spreadsheets/d/e/2PACX-1vRlZcefwZpSp0ZovIGfH_fUplQlKUz2w5ETVrA6pAI8TGVCu8DqbWsUjWACDyYVJdVNUYzgSvmHpSg_/pubhtml?widget=true&amp;headers=false', e))
+      .append($("<a>")
+        .html("INFO SPO MD")
+        .attr("href", "#.iframe")));
+}
+
+
+function eventClick(s, e) {
+  e.stopPropagation();
+  let click = $('<iframe src="' + s + '"></iframe>')
+    .css({
+      "position": "fixed",
+      "top": "20px",
+      "left": "10px",
+      "width": "80%",
+      "height": "80%"
+    }).addClass("iframe");
+  $("body").append(click);
 }

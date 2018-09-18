@@ -4,7 +4,8 @@
 
 body {
   font-size: 1.2em;
-  padding-top: 50px
+  padding-top: 50px;
+  padding-right: 10px;
 }
 
 #topbar-wrapper {
@@ -19,7 +20,7 @@ body {
 
 
 #inside-topbar {
-  width: 400px;
+  max-width: 400px;
   height: inherit;
   display: flex;
   align-items: center;
